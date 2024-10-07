@@ -1,5 +1,9 @@
 theme = "nightfox"
 
+[editor]
+# Allows colors through SSH e.g. Windows->Linux
+true-color = true
+
 [keys.normal.space]
 # Allow toggling whitespaces visibility on <Space> + <+> combo
 "+" = ":toggle whitespace.render all none"
