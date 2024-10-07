@@ -1,0 +1,3 @@
+{
+	"startupActions": "new-tab -p \"Command Prompt\"; split-pane -p \"Command Prompt\"; split-pane -H -p \"Command Prompt\"",
+}
