@@ -1,0 +1,5 @@
+theme = "nightfox"
+
+[keys.normal.space]
+# Allow toggling whitespaces visibility on <Space> + <+> combo
+"+" = ":toggle whitespace.render all none"
