@@ -1,9 +1,12 @@
 theme = "nightfox"
 
 [editor]
-# Allows colors through SSH e.g. Windows->Linux
+# Allows support for Windows->Linux SSH full color support
 true-color = true
 
-[keys.normal.space]
+# Custom command picker
+[keys.normal."#"]
+# Allow toggling inlay hints
+"i" = ":toggle lsp.display-inlay-hints"
 # Allow toggling whitespaces visibility on <Space> + <+> combo
-"+" = ":toggle whitespace.render all none"
+"s" = ":toggle whitespace.render all none"
