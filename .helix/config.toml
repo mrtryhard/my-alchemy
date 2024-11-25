@@ -1,12 +1,28 @@
 theme = "nightfox"
 
 [editor]
-# Allows support for Windows->Linux SSH full color support
+# Allows colors through SSH e.g. Windows->Linux
 true-color = true
+rulers = [80, 120]
 
-# Custom command picker
 [keys.normal."#"]
 # Allow toggling inlay hints
 "i" = ":toggle lsp.display-inlay-hints"
 # Allow toggling whitespaces visibility on <Space> + <+> combo
 "s" = ":toggle whitespace.render all none"
+
+[keys.insert]
+C-p = "signature_help"
+
+[editor.statusline]
+left = ["mode", "spinner", "version-control", "file-name"]
+
+[editor.lsp]
+# Disable automatically popups of signature parameter help
+auto-signature-help = false
+# Show LSP messages in the status line
+display-messages = true
+
+[editor.file-picker]
+# Display hidden files in the file picker (ex: .vscode/)
+hidden = false
